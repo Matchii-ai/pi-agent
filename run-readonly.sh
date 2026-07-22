@@ -18,6 +18,6 @@ docker run --rm -it \
   -v $image-sessions:/root/.pi/agent/sessions \
   -v $image-bin:/root/.pi/agent/bin \
   -v $image-ssh:/root/.ssh \
-  -v $mount:/root/brain \
+  -v $mount:/root/brain:ro \
   $image --name "$folder" "$@" 
 
